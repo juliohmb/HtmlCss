@@ -96,10 +96,8 @@ footer{
     margin-top: 20px;
 }
 
-main{
-    width: 940px;
-    margin: 0 auto;
-}
+/* main{
+} */
 
 form{
     margin: 40px 0;
@@ -156,6 +154,11 @@ td, th{
     padding: 8px 15px;
 }
 
+.formulario{
+    width: 940px;
+    margin: 0 auto;
+}
+
 /* css Home Page */
 
 .banner{
@@ -167,6 +170,13 @@ td, th{
     font-size: 2em;
     margin: 0 0 1em;
     clear: left;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p{
@@ -194,6 +204,14 @@ td, th{
 
 .imagem-beneficios{
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px black;
+}
+
+.imagem-beneficios:hover{
+    box-shadow: 10px 10px 20px black;
+    opacity: 0.7;
 }
 
 .utensilios{
@@ -204,6 +222,12 @@ td, th{
 
 .mapa{
     padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p{
@@ -218,6 +242,7 @@ td, th{
 
 .beneficios{
     padding: 3em 0;
+    background: #888888;
 }
 
 .itens{
@@ -226,4 +251,26 @@ td, th{
 
 .itens:first-child{
     font-weight: bold;
+}
+
+.itens:before{
+    content: "★";
+}
+
+@media  screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
 }
